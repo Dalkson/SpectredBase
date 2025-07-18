@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estimate Mining Profits</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Estimate Mining Profits</h1>
+        <h3>under ideal conditions</h3>
+        <div class="input-container">
+            <input type="text" id="hashrateInput" value="1" oninput="calculateRewards()">
+            <select>
+                <option>KH/s</option>
+            </select>
+        </div>
+        <table>
+            <tr>
+                <td>Daily</td>
+                <td id="dailySPR">0.000000 SPR</td>
+                <td id="dailyUsd">0.000 USD</td>
+            </tr>
+            <tr>
+                <td>Weekly</td>
+                <td id="weeklySPR">0.000000 SPR</td>
+                <td id="weeklyUsd">0.000 USD</td>
+            </tr>
+            <tr>
+                <td>Monthly</td>
+                <td id="monthlySPR">0.000000 SPR</td>
+                <td id="monthlyUsd">0.000 USD</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
